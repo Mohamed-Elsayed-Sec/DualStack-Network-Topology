@@ -1,34 +1,43 @@
-# IPv4 & IPv6 Network Topology
+# EDUStack Network Topology
 
-This is my first networking project on GitHub.  
-It represents a **dual-stack (IPv4 & IPv6) network topology** with multiple routers and subnets.  
-The diagrams were designed using [Miro](https://miro.com/).
+## 📌 Project Overview
 
----
+This project demonstrates a dual-stack network topology using both IPv4 and IPv6 protocols. It includes multiple routers, subnets, and end devices, with connectivity tests performed using `ping6` and `traceroute6`.
 
-## Topology Diagrams
+## 🎯 Objectives
 
-### IPv4 Topology
-![IPv4 Topology](IPv4-Topology.jpg)
+- Design and document a structured network topology
+- Implement IPv6 addressing using `dhclient` and `radvd`
+- Validate connectivity between devices using ICMPv6 tools
 
-### IPv6 Topology
-![IPv6 Topology](IPv6-Topology.jpg)
+## 🧠 Topology Highlights
 
----
+- Dual-stack implementation (IPv4 & IPv6)
+- End-to-end testing between PC1 and PC2
+- Visual diagrams created using Miro
 
-## Details
-- Routers: R1 to R9
-- IPv4 Addressing: /24 subnets
-- IPv6 Addressing: /64 subnets (Documentation prefix `2001:db8::/32` used for example)
+## 🗺️ Mapping Diagrams
 
----
+| Diagram | Description |
+|--------|-------------|
+| `topology-ipv4.jpg` | IPv4 network layout |
+| `topology-ipv6.jpg` | IPv6 network layout |
+| `topology-ipv4-ipv6.jpg` | Combined dual-stack topology |
 
-## How to Use
-- Can be implemented in Cisco Packet Tracer or GNS3.
-- Assign IPv4 and IPv6 addresses as shown in the diagrams.
-- Configure dual-stack routing (static or dynamic) to ensure connectivity.
+## 📊 Connectivity Results
 
----
+### IPv6 Addressing
 
-## Author
-Mohamed Elsayed Mohamed Youssef
+- **PC1**: Configured via `dhclient`  
+- **PC2**: Configured via `radvd`  
+- Documentation prefix used: `2001:db8::/64`
+
+### ICMPv6 Tests
+
+- **Ping6**: PC1 ↔ PC2  
+- **Traceroute6**: PC1 ↔ PC2
+
+## 👤 Author
+
+**Mohamed Elsayed Ahmed Youssef**  
+This project is part of my technical journey into professional networking and cybersecurity. Feedback is welcome!
